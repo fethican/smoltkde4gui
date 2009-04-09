@@ -1,6 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# smoltkde4gui - KDE4 user interface for Smolt
+#
+# Copyright (C) 2009,  Fethican Coşkuner
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# Please read the COPYING file.
+
 import sys
 from urlparse import urljoin
 from PyKDE4.kdecore import *
@@ -66,3 +77,5 @@ class Host:
 
         return self.sendable_host_labels
 
+    def get_device_info(self):
+        return self.profile.deviceIter()
