@@ -1,11 +1,16 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainwindow.ui'
+# smoltkde4gui - KDE4 user interface for Smolt
 #
-# Created: Sun Apr  5 02:00:58 2009
-#      by: PyQt4 UI code generator 4.4.4
+# Copyright (C) 2009,  Fethican Coşkuner
 #
-# WARNING! All changes made in this file will be lost!
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# Please read the COPYING file.
 
 from PyQt4 import QtCore, QtGui
 
