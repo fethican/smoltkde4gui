@@ -14,8 +14,11 @@
 
 from PyKDE4.kdecore import *
 from PyKDE4.kdeui import *
-from mainwindowUi import Ui_MainWindow
 
+from mainwindowUi import Ui_MainWindow
+from dialog import S_Dialog
+
+from operation import Action
 from PyQt4 import Qt
 from PyQt4 import QtGui
 from PyQt4 import QtCore
@@ -29,6 +32,8 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         KMainWindow.__init__(self)
         self.setupUi(self)
 
+        self.createActions()
+        self.setToolBar()
         self.host = Host()
 
         # Set and fill the first tab.
@@ -139,3 +144,51 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         else:
             tableItem.setBackgroundColor(QtGui.QColor('#ffffff')) # White
 
+    def setToolBar(self):
+        self.toolBar.addAction(self.exitAct)
+        self.toolBar.addAction(self.webAct)
+        self.toolBar.addAction(self.privacyAct)
+        self.toolBar.addAction(self.sendAct)
+
+    def createActions(self):
+        self.exitAct = QtGui.QAction(QtGui.QIcon("../icons/exit.png"), i18n("&Exit"), self)
+        self.exitAct.setShortcut(i18n("Ctrl+q"))
+        self.exitAct.setStatusTip(i18n("Exit Smolt without sending"))
+        self.connect(self.exitAct, QtCore.SIGNAL("triggered()"), self.close)
+
+        self.sendAct = QtGui.QAction(QtGui.QIcon("../icons/send.png"), i18n("&Send my profile"), self)
+        self.sendAct.setShortcut(i18n("Ctrl+S"))
+        self.sendAct.setStatusTip(i18n("Send my profile"))
+        self.connect(self.sendAct, QtCore.SIGNAL("triggered()"), self._send)
+
+        self.privacyAct = QtGui.QAction(QtGui.QIcon("../icons/privacy.png"), i18n("Show &Privacy Policy"), self)
+        self.privacyAct.setShortcut(i18n("Ctrl+P"))
+        self.privacyAct.setStatusTip(i18n("Show the Smolt Privacy Policy"))
+        self.connect(self.privacyAct, QtCore.SIGNAL("triggered()"), self.privacy)
+
+        self.webAct = QtGui.QAction(QtGui.QIcon("../icons/web.png"), i18n("&Go my profile page"), self)
+        self.webAct.setShortcut(i18n("Ctrl+O"))
+        self.webAct.setStatusTip(i18n("Take me to my smolt profile page"))
+        self.connect(self.webAct, QtCore.SIGNAL("triggered()"), self.web)
+
+        # Create actions for file and help menu
+        self.connect(self.action_Send, QtCore.SIGNAL("triggered()"), self._send)
+        self.connect(self.action_Exit, QtCore.SIGNAL("triggered()"), self.close)
+        self.connect(self.action_Privacy_Policy, QtCore.SIGNAL("triggered()"), self.privacy)
+        self.connect(self.action_My_Smolt_Page, QtCore.SIGNAL("triggered()"), self.web)
+        self.connect(self.action_About, QtCore.SIGNAL("triggered()"), self.about)
+
+    def _send(self):
+        self.dialog = S_Dialog()
+        self.dialog.show()
+
+        self.connect(self.dialog.cancelButton, QtCore.SIGNAL("clicked()"), self.dialog.close)
+
+    def privacy(self):
+        pass
+
+    def web(self):
+        pass
+
+    def about(self):
+        pass
