@@ -53,6 +53,11 @@ class Host:
     def send_profile(self):
         retvalue, pub_uuid, admin = self.profile.send(smoonURL=smolt.smoonURL)
         url = urljoin(smolt.smoonURL, '/show?uuid=%s' % pub_uuid)
+        values = { "pub_uuid" : pub_uuid,
+                   "admin" : admin,
+                   "url" : url }
+
+        return values
 
     def getLabels(self):
         self.sendable_host_labels = [ i18n("UUID"),
