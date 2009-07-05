@@ -16,9 +16,8 @@ from PyKDE4.kdecore import *
 from PyKDE4.kdeui import *
 
 from mainwindowUi import Ui_MainWindow
-from dialog import S_Dialog
+#from dialog import S_Dialog
 
-from operation import Action
 from PyQt4 import Qt
 from PyQt4 import QtGui
 from PyQt4 import QtCore
@@ -57,7 +56,8 @@ class MainWindow(KMainWindow, Ui_MainWindow):
             self.setRowColor(self.defaultTableWidget, label_item)
             self.defaultTableWidget.setItem(item, 0, label_item)
 
-            data_item = QtGui.QTableWidgetItem(data_list[item])
+            _value = QtCore.QVariant(data_list[item]).toString()
+            data_item = QtGui.QTableWidgetItem(_value)
             #data_item.setFlags(QtCore.Qt.ItemIsEnabled)
             self.setRowColor(self.defaultTableWidget, data_item)
             self.defaultTableWidget.setItem(item, 1, data_item)
