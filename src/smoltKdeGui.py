@@ -179,10 +179,10 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         self.connect(self.action_About, QtCore.SIGNAL("triggered()"), self.about)
 
     def _send(self):
-        self.dialog = S_Dialog()
-        self.dialog.show()
-
-        self.connect(self.dialog.cancelButton, QtCore.SIGNAL("clicked()"), self.dialog.close)
+        self.proc = QtCore.QProcess()
+        command = "smoltSendProfile"
+        arguments = ["-a", "--submitOnly"]
+        self.proc.startDetached(command, arguments)
 
     def privacy(self):
         pass
