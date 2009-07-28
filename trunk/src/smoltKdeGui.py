@@ -16,7 +16,8 @@ from PyKDE4.kdecore import *
 from PyKDE4.kdeui import *
 
 from mainwindowUi import Ui_MainWindow
-#from dialog import S_Dialog
+from privacyDialog import privacyDialog
+from infoDialog import smoltPrivacy
 
 from PyQt4 import Qt
 from PyQt4 import QtGui
@@ -42,6 +43,8 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         # Set and fill the second tab.
         self.setDetailedTable()
         self.fillDetailedTable()
+
+        self.smoltURL = 'http://smolt.pardus.org.tr:8090'
 
     def fillDefaultTable(self):
         ''' Fill the host information to the table '''
@@ -151,22 +154,26 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         self.toolBar.addAction(self.sendAct)
 
     def createActions(self):
-        self.exitAct = QtGui.QAction(QtGui.QIcon("../icons/exit.png"), i18n("&Exit"), self)
+        self.exitAct = QtGui.QAction(i18n("&Exit"), self)
+        self.exitAct.setIcon(KIcon("application-exit.png"))
         self.exitAct.setShortcut(i18n("Ctrl+q"))
         self.exitAct.setStatusTip(i18n("Exit Smolt without sending"))
         self.connect(self.exitAct, QtCore.SIGNAL("triggered()"), self.close)
 
-        self.sendAct = QtGui.QAction(QtGui.QIcon("../icons/send.png"), i18n("&Send my profile"), self)
+        self.sendAct = QtGui.QAction(i18n("&Send my profile"), self)
+        self.sendAct.setIcon(KIcon("dialog-ok-apply.png"))
         self.sendAct.setShortcut(i18n("Ctrl+S"))
         self.sendAct.setStatusTip(i18n("Send my profile"))
         self.connect(self.sendAct, QtCore.SIGNAL("triggered()"), self._send)
 
-        self.privacyAct = QtGui.QAction(QtGui.QIcon("../icons/privacy.png"), i18n("Show &Privacy Policy"), self)
+        self.privacyAct = QtGui.QAction(i18n("Show &Privacy Policy"), self)
+        self.privacyAct.setIcon(KIcon("help-about.png"))
         self.privacyAct.setShortcut(i18n("Ctrl+P"))
         self.privacyAct.setStatusTip(i18n("Show the Smolt Privacy Policy"))
         self.connect(self.privacyAct, QtCore.SIGNAL("triggered()"), self.privacy)
 
-        self.webAct = QtGui.QAction(QtGui.QIcon("../icons/web.png"), i18n("&Go my profile page"), self)
+        self.webAct = QtGui.QAction(i18n("&Go my profile page"), self)
+        self.webAct.setIcon(KIcon("go-home.png"))
         self.webAct.setShortcut(i18n("Ctrl+O"))
         self.webAct.setStatusTip(i18n("Take me to my smolt profile page"))
         self.connect(self.webAct, QtCore.SIGNAL("triggered()"), self.web)
@@ -178,6 +185,10 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         self.connect(self.action_My_Smolt_Page, QtCore.SIGNAL("triggered()"), self.web)
         self.connect(self.action_About, QtCore.SIGNAL("triggered()"), self.about)
 
+        self.action_Send.setIcon(KIcon("dialog-ok-apply.png"))
+        self.action_My_Smolt_Page.setIcon(KIcon("go-home.png"))
+        self.action_Exit.setIcon(KIcon("application-exit.png"))
+
     def _send(self):
         self.proc = QtCore.QProcess()
         command = "smoltSendProfile"
@@ -185,10 +196,13 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         self.proc.startDetached(command, arguments)
 
     def privacy(self):
-        pass
+        self.privacyInfo = privacyDialog()
+        self.privacyInfo.show()
 
     def web(self):
-        pass
+        # TODO: Get the url from smolt.
+        self.private = smoltPrivacy()
+        self.private.show()
 
     def about(self):
         pass
