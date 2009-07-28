@@ -1,16 +1,11 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# smoltkde4gui - KDE4 user interface for Smolt
+# Form implementation generated from reading ui file '../ui/mainwindow.ui'
 #
-# Copyright (C) 2009,  Fethican Coşkuner
+# Created: Thu Jul 23 23:15:22 2009
+#      by: PyQt4 UI code generator 4.5.1
 #
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-#
-# Please read the COPYING file.
+# WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
 
@@ -18,6 +13,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(564, 477)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../icons/smolt-icon-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_2 = QtGui.QGridLayout(self.centralwidget)
@@ -28,14 +26,14 @@ class Ui_MainWindow(object):
         self.tab.setObjectName("tab")
         self.gridLayout = QtGui.QGridLayout(self.tab)
         self.gridLayout.setObjectName("gridLayout")
-        self.defaultTableWidget = QtGui.QTableWidget(0, 2, self.tab)
+        self.defaultTableWidget = QtGui.QTableWidget(self.tab)
         self.defaultTableWidget.setObjectName("defaultTableWidget")
-        #self.defaultTableWidget.setColumnCount(2)
-        #self.defaultTableWidget.setRowCount(0)
-        #item = QtGui.QTableWidgetItem()
-        #self.defaultTableWidget.setHorizontalHeaderItem(0, item)
-        #item = QtGui.QTableWidgetItem()
-        #self.defaultTableWidget.setHorizontalHeaderItem(1, item)
+        self.defaultTableWidget.setColumnCount(2)
+        self.defaultTableWidget.setRowCount(0)
+        item = QtGui.QTableWidgetItem()
+        self.defaultTableWidget.setHorizontalHeaderItem(0, item)
+        item = QtGui.QTableWidgetItem()
+        self.defaultTableWidget.setHorizontalHeaderItem(1, item)
         self.gridLayout.addWidget(self.defaultTableWidget, 0, 0, 1, 1)
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtGui.QWidget()
@@ -51,7 +49,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.tabWidget, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 564, 29))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 564, 23))
         self.menubar.setObjectName("menubar")
         self.menu_File = QtGui.QMenu(self.menubar)
         self.menu_File.setObjectName("menu_File")
@@ -87,9 +85,9 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
-        #self.defaultTableWidget.horizontalHeaderItem(0).setText(QtGui.QApplication.translate("MainWindow", "Label", None, QtGui.QApplication.UnicodeUTF8))
-        #self.defaultTableWidget.horizontalHeaderItem(1).setText(QtGui.QApplication.translate("MainWindow", "Info", None, QtGui.QApplication.UnicodeUTF8))
+        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Smolt", None, QtGui.QApplication.UnicodeUTF8))
+        self.defaultTableWidget.horizontalHeaderItem(0).setText(QtGui.QApplication.translate("MainWindow", "Label", None, QtGui.QApplication.UnicodeUTF8))
+        self.defaultTableWidget.horizontalHeaderItem(1).setText(QtGui.QApplication.translate("MainWindow", "Info", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QtGui.QApplication.translate("MainWindow", "My Profile", None, QtGui.QApplication.UnicodeUTF8))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QtGui.QApplication.translate("MainWindow", "Detailed Info", None, QtGui.QApplication.UnicodeUTF8))
         self.menu_File.setTitle(QtGui.QApplication.translate("MainWindow", "&File", None, QtGui.QApplication.UnicodeUTF8))
