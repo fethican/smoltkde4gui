@@ -157,7 +157,7 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         self.exitAct = QtGui.QAction(i18n("&Exit"), self)
         self.exitAct.setIcon(KIcon("application-exit.png"))
         self.exitAct.setShortcut(i18n("Ctrl+q"))
-        self.exitAct.setStatusTip(i18n("Exit Smolt without sending"))
+        self.exitAct.setStatusTip(i18n("Exit Smolt without sending profile"))
         self.connect(self.exitAct, QtCore.SIGNAL("triggered()"), self.close)
 
         self.sendAct = QtGui.QAction(i18n("&Send my profile"), self)
