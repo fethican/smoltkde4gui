@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Fethican Coşkuner <fethicanc@gmail.com>, 2009.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-31 00:58+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .tmp/host.py:63
+msgid "UUID"
+msgstr "UUID"
+
+#: .tmp/host.py:64
+msgid "OS"
+msgstr "İşletim Sistemi"
+
+#: .tmp/host.py:65
+msgid "Default run level"
+msgstr "Öntanımlı çalışma seviyesi"
+
+#: .tmp/host.py:66
+msgid "Language"
+msgstr "Dil"
+
+#: .tmp/host.py:67
+msgid "Platform"
+msgstr "Platform"
+
+#: .tmp/host.py:68
+msgid "BogoMIPS"
+msgstr "BogoMIPS"
+
+#: .tmp/host.py:69
+msgid "CPU Vendor"
+msgstr "CPU Sağlayıcı"
+
+#: .tmp/host.py:70
+msgid "CPU Model"
+msgstr "CPU Modeli"
+
+#: .tmp/host.py:71
+msgid "Number of CPUs"
+msgstr "CPU Sayısı"
+
+#: .tmp/host.py:72
+msgid "CPU Speed"
+msgstr "CPU Hızı"
+
+#: .tmp/host.py:73
+msgid "System Memory"
+msgstr "Sistem Hafızası"
+
+#: .tmp/host.py:74
+msgid "System Swap"
+msgstr "Takas Alanı"
+
+#: .tmp/host.py:75
+msgid "Vendor"
+msgstr "Sağlayıcı"
+
+#: .tmp/host.py:76
+msgid "System"
+msgstr "Sistem"
+
+#: .tmp/host.py:77
+msgid "Form Factor"
+msgstr ""
+
+#: .tmp/host.py:78
+msgid "Kernel"
+msgstr "Çekirdek"
+
+#: .tmp/host.py:79
+msgid "SELinux Enabled"
+msgstr "SELinux Aktif"
+
+#: .tmp/host.py:80
+msgid "SELinux Policy"
+msgstr "SELinux Politikası"
+
+#: .tmp/host.py:81
+msgid "SELinux Enforce"
+msgstr "SELinux Mecburi"
+
+#: .tmp/infoDialogUi.py:104 .tmp/ui_infoDialog.py:104
+#, fuzzy
+msgid "My Smolt Info"
+msgstr "Smolt Bilgim"
+
+#: .tmp/infoDialogUi.py:105 .tmp/ui_infoDialog.py:105
+msgid "My Smolt Page: "
+msgstr "Smolt Sayfam"
+
+#: .tmp/infoDialogUi.py:106 .tmp/ui_infoDialog.py:106
+#, fuzzy
+msgid "My Admin Token:  "
+msgstr "Yönetim Anahtarım:  "
+
+#: .tmp/infoDialogUi.py:107 .tmp/ui_infoDialog.py:107
+#, fuzzy
+msgid ""
+"First, you should send your profile, then you can see your link and token."
+msgstr ""
+"Profilinizi gönderdikten sonra linkinizi ve yönetim anahtarınızı "
+"görebilirsiniz. "
+
+#: .tmp/infoDialogUi.py:108 .tmp/ui_privacyPolicy.py:46
+#: .tmp/ui_infoDialog.py:108 .tmp/privacyDialogUi.py:46
+msgid "&Close"
+msgstr "&Kapat"
+
+#: .tmp/ui_privacyPolicy.py:36 .tmp/privacyDialogUi.py:36
+msgid "Privacy Policy"
+msgstr "Gizlilik Politikası"
+
+#: .tmp/ui_privacyPolicy.py:37 .tmp/privacyDialogUi.py:37
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">   Smolt will only send "
+"hardware and basic operating system information to the Pardus smolt server "
+"(smoon).  The only tie from the database to a submitters machine is the "
+"UUID.  As long as the submitter does not give out this UUID the submission "
+"is anonymous.  If at any point in time a user wants to delete their profile "
+"from the database they need only run</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">    <span style=\" font-"
+"style:italic;\">smoltDeleteProfile</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">   The information sent to "
+"the smolt database server should be considered public in that anyone can "
+"view the statistics, data and share machine profiles.  In  many ways smolt "
+"is designed to get hardware vendors and other 3rd parties attention.  As "
+"such, not only will this information be shared with 3rd parties, we will be "
+"using smolt as leverage to gain better support for open source drivers and "
+"better support in general.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-"
+"decoration: underline;\">IP Logging:</span>  In Pardus's smolt install all "
+"web traffic goes through a proxy server first.  This is the only place IP "
+"addresses are being logged and they are kept on that server for a period of "
+"4 weeks at which time log rotation removes these logs.  The Pardus Project "
+"does not aggregate ip addresses in the smolt database.  These logs are "
+"private and will not be available to the general public.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">   Users unhappy with this "
+"policy should simply not use smolt.  Users with questions about this policy "
+"should contact the Pardus Infrastructure Team at admin [at] pardus.org.tr  "
+"Also remember that users can delete their profiles at any time using \"<span "
+"style=\" font-style:italic;\">smoltDeleteProfile</span>\"</p></body></html>"
+msgstr ""
+
+#: .tmp/mainWindow.py:105 .tmp/mainwindowUi.py:88 .tmp/ui_mainwindow.py:88
+msgid "Label"
+msgstr "Etiket"
+
+#: .tmp/mainWindow.py:106
+msgid "Data"
+msgstr "Veri"
+
+#: .tmp/mainWindow.py:124
+msgid "Bus"
+msgstr "Veriyolu"
+
+#: .tmp/mainWindow.py:125
+msgid "Driver"
+msgstr "Sürücü"
+
+#: .tmp/mainWindow.py:126
+msgid "Type"
+msgstr "Tip"
+
+#: .tmp/mainWindow.py:127
+msgid "Description"
+msgstr "Açıklama"
+
+#: .tmp/mainWindow.py:157 .tmp/mainwindowUi.py:98 .tmp/ui_mainwindow.py:98
+msgid "&Exit"
+msgstr "&Çıkış"
+
+#: .tmp/mainWindow.py:159
+msgid "Ctrl+q"
+msgstr "Ctrl+q"
+
+#: .tmp/mainWindow.py:160
+msgid "Exit Smolt without sending profile"
+msgstr "Profil göndermeden çık"
+
+#: .tmp/mainWindow.py:163
+msgid "&Send my profile"
+msgstr "Profilimi &gönder"
+
+#: .tmp/mainWindow.py:165 .tmp/mainwindowUi.py:96 .tmp/ui_mainwindow.py:96
+msgid "Ctrl+S"
+msgstr "Ctrl+S"
+
+#: .tmp/mainWindow.py:166
+msgid "Send my profile"
+msgstr "Profilimi gönder"
+
+#: .tmp/mainWindow.py:169
+msgid "Show &Privacy Policy"
+msgstr "Gizlilik &Politikasını Göster"
+
+#: .tmp/mainWindow.py:171
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+#: .tmp/mainWindow.py:172
+msgid "Show the Smolt Privacy Policy"
+msgstr "Smolt Gizlilik Politikasını Göster"
+
+#: .tmp/mainWindow.py:175
+msgid "&Go my profile page"
+msgstr "Profil &sayfama git"
+
+#: .tmp/mainWindow.py:177
+msgid "Ctrl+O"
+msgstr "Ctrl+0"
+
+#: .tmp/mainWindow.py:178
+msgid "Take me to my smolt profile page"
+msgstr "Beni profil sayfama götür"
+
+#: .tmp/mainwindowUi.py:87 .tmp/ui_mainwindow.py:87
+msgid "Smolt"
+msgstr "Smolt"
+
+#: .tmp/mainwindowUi.py:89 .tmp/ui_mainwindow.py:89
+msgid "Info"
+msgstr "Bilgi"
+
+#: .tmp/mainwindowUi.py:90 .tmp/ui_mainwindow.py:90
+msgid "My Profile"
+msgstr "Profilim"
+
+#: .tmp/mainwindowUi.py:91 .tmp/ui_mainwindow.py:91
+msgid "Detailed Info"
+msgstr "Detaylı Bilgi"
+
+#: .tmp/mainwindowUi.py:92 .tmp/ui_mainwindow.py:92
+msgid "&File"
+msgstr "&Dosya"
+
+#: .tmp/mainwindowUi.py:93 .tmp/ui_mainwindow.py:93
+msgid "&Help"
+msgstr "&Yardım"
+
+#: .tmp/mainwindowUi.py:94 .tmp/ui_mainwindow.py:94
+msgid "toolBar"
+msgstr "Araç Çubuğu"
+
+#: .tmp/mainwindowUi.py:95 .tmp/ui_mainwindow.py:95
+msgid "&Send"
+msgstr "&Gönder"
+
+#: .tmp/mainwindowUi.py:97 .tmp/ui_mainwindow.py:97
+msgid "&My Smolt Page"
+msgstr "&Smolt Sayfam"
+
+#: .tmp/mainwindowUi.py:99 .tmp/ui_mainwindow.py:99
+msgid "&Privacy Policy"
+msgstr "Gi&zlilik Politikası"
+
+#: .tmp/mainwindowUi.py:100 .tmp/ui_mainwindow.py:100
+msgid "&About"
+msgstr "&Hakkında"
+
+#: .tmp/about.py:21
+msgid "SmoltGui"
+msgstr "SmoltGui"
+
+#: .tmp/about.py:23
+msgid "Graphical user interface for Smolt"
+msgstr "Smolt için kullanıcı arayüzü"
+
+#: .tmp/about.py:25
+msgid "(c) 2009 Fethican Coşkuner"
+msgstr "(c) 2009 Fethican Coşkuner"
+
+#: .tmp/about.py:32
+msgid "Fethican Coşkuner"
+msgstr "Fethican Coşkuner"
+
+#: .tmp/about.py:32
+msgid "Maintainer"
+msgstr ""
