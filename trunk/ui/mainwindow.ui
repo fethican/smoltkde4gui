@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../icons/smolt-icon-48.png</normaloff>../icons/smolt-icon-48.png</iconset>
+    <normaloff>../icons/smolt.png</normaloff>../icons/smolt.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
