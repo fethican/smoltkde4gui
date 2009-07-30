@@ -43,7 +43,7 @@ class smoltPrivacy(QDialog, Ui_infoDialog):
         self.Kadmin.setText(self.token)
 
     def setStack(self):
+        self.setLink_and_admin()
         if self.uuid == '':
             self.stackedWidget.setCurrentIndex(1)
-        else:
-            self.setLink_and_admin()
+
