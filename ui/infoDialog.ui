@@ -30,7 +30,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../icons/smolt-icon-48.png</normaloff>../icons/smolt-icon-48.png</iconset>
+    <normaloff>../icons/smolt.png</normaloff>../icons/smolt.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
