@@ -16,13 +16,13 @@
 from PyKDE4.kdecore import *
 
 # Application Data
-appName     = "Smolt"
-catalog     = ""
-programName = ki18n("")
-version     = ""
-description = ki18n("")
+appName     = "smoltGui"
+catalog     = appName
+programName = ki18n("SmoltGui")
+version     = "0.1"
+description = ki18n("Graphical user interface for Smolt")
 license     = KAboutData.License_GPL
-copyright   = ki18n("")
+copyright   = ki18n("(c) 2009 Fethican Coşkuner")
 text        = ki18n(None)
 homePage    = "http://code.google.com/p/smoltkde4gui/"
 bugEmail    = ""
