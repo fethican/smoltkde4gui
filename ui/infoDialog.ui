@@ -29,8 +29,8 @@
    <string>My Smolt Info</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>../icons/smolt.png</normaloff>../icons/smolt.png</iconset>
+   <iconset resource="../icons/data.qrc">
+    <normaloff>:/data/smolt.png</normaloff>:/data/smolt.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -214,6 +214,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../icons/data.qrc"/>
+ </resources>
  <connections/>
 </ui>
