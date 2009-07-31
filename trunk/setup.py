@@ -63,8 +63,8 @@ class Build(build):
         for filename in glob.glob1("ui", "*.ui"):
             os.system("/usr/kde/4/bin/pykde4uic -o build/%sUi.py ui/%s" % (filename.split(".")[0], filename))
         print "Generating RCs..."
-        for filename in glob.glob1("data", "*.qrc"):
-            os.system("/usr/bin/pyrcc4 data/%s -o build/%s_rc.py" % (filename, filename.split(".")[0]))
+        for filename in glob.glob1("icons", "*.qrc"):
+            os.system("/usr/bin/pyrcc4 icons/%s -o build/%s_rc.py" % (filename, filename.split(".")[0]))
 
 class Install(install):
     def run(self):
@@ -87,7 +87,7 @@ class Install(install):
         print "Making directories..."
         makeDirs(mime_icons_dir)
         makeDirs(icon_dir)
-        makeDirs(mime_dir)
+        #makeDirs(mime_dir)
         makeDirs(bin_dir)
         makeDirs(locale_dir)
         makeDirs(apps_dir)
@@ -95,22 +95,19 @@ class Install(install):
 
         # Install desktop files
         print "Installing desktop files..."
-        shutil.copy("data/package-manager.desktop", apps_dir)
-        shutil.copy("data/package-manager.png", icon_dir)
-        shutil.copy("data/packagemanager-helper.desktop", apps_dir)
-        shutil.copy("data/package-manager.xml", mime_dir)
+        shutil.copy("smoltGui.desktop", apps_dir)
+        shutil.copy("icons/smolt.png", icon_dir)
 
         # Install icons
-        for size in ["16x16", "32x32", "48x48", "64x64"]:
-            mime_size_dir = "%s/%s/mimetypes/" % (mime_icons_dir, size)
-            makeDirs(mime_size_dir)
-            shutil.copy("data/package-manager-%s.png" % size, "%s/application-x-pisi.png" % mime_size_dir)
+        mime_size_dir = "%s/48x48/mimetypes/" % mime_icons_dir
+        makeDirs(mime_size_dir)
+        shutil.copy("icons/smolt.png", "%s/application-x-smolt.png" % mime_size_dir)
 
         # Install codes
         print "Installing codes..."
         os.system("cp -R build/* %s/" % project_dir)
-        print "Installing help files..."
-        os.system("cp -R help %s/" % project_dir)
+        #print "Installing help files..."
+        #os.system("cp -R help %s/" % project_dir)
         # Install locales
         print "Installing locales..."
         for filename in glob.glob1("po", "*.po"):
@@ -127,15 +124,12 @@ class Install(install):
         # Modes
         print "Changing file modes..."
         os.chmod(os.path.join(project_dir, "%s.py" % about.appName), 0755)
-        os.chmod(os.path.join(project_dir, "pm-install.py"), 0755)
         # Symlink
         try:
             if self.root:
                 os.symlink(os.path.join(project_dir.replace(self.root, ""), "%s.py" % about.appName), os.path.join(bin_dir, about.appName))
-                os.symlink(os.path.join(project_dir.replace(self.root, ""), "pm-install.py"), os.path.join(bin_dir, "pm-install"))
             else:
                 os.symlink(os.path.join(project_dir, "%s.py" % about.appName), os.path.join(bin_dir, about.appName))
-                os.symlink(os.path.join(project_dir, "pm-install.py"), os.path.join(bin_dir, "pm-install"))
         except OSError, e:
             pass
 
