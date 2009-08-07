@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-31 00:58+0300\n"
+"POT-Creation-Date: 2009-08-07 21:30+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,21 +92,77 @@ msgstr "SELinux Politikası"
 msgid "SELinux Enforce"
 msgstr "SELinux Mecburi"
 
-#: .tmp/infoDialogUi.py:104 .tmp/ui_infoDialog.py:104
+#: .tmp/mainWindow.py:105 .tmp/ui_mainwindow.py:88
+msgid "Label"
+msgstr "Etiket"
+
+#: .tmp/mainWindow.py:106
+msgid "Data"
+msgstr "Veri"
+
+#: .tmp/mainWindow.py:124
+msgid "Bus"
+msgstr "Veriyolu"
+
+#: .tmp/mainWindow.py:125
+msgid "Driver"
+msgstr "Sürücü"
+
+#: .tmp/mainWindow.py:126
+msgid "Type"
+msgstr "Tip"
+
+#: .tmp/mainWindow.py:127
+msgid "Description"
+msgstr "Açıklama"
+
+#: .tmp/mainWindow.py:157 .tmp/ui_mainwindow.py:98
+msgid "&Exit"
+msgstr "&Çıkış"
+
+#: .tmp/mainWindow.py:160
+msgid "Exit Smolt without sending profile"
+msgstr "Profil göndermeden çık"
+
+#: .tmp/mainWindow.py:163
+msgid "&Send my profile"
+msgstr "Profilimi &gönder"
+
+#: .tmp/mainWindow.py:166
+msgid "Send my profile"
+msgstr "Profilimi gönder"
+
+#: .tmp/mainWindow.py:169
+msgid "Show &Privacy Policy"
+msgstr "Gizlilik &Politikasını Göster"
+
+#: .tmp/mainWindow.py:172
+msgid "Show the Smolt Privacy Policy"
+msgstr "Smolt Gizlilik Politikasını Göster"
+
+#: .tmp/mainWindow.py:175
+msgid "&Go my profile page"
+msgstr "Profil &sayfama git"
+
+#: .tmp/mainWindow.py:178
+msgid "Take me to my smolt profile page"
+msgstr "Beni profil sayfama götür"
+
+#: .tmp/ui_infoDialog.py:104
 #, fuzzy
 msgid "My Smolt Info"
 msgstr "Smolt Bilgim"
 
-#: .tmp/infoDialogUi.py:105 .tmp/ui_infoDialog.py:105
+#: .tmp/ui_infoDialog.py:105
 msgid "My Smolt Page: "
 msgstr "Smolt Sayfam"
 
-#: .tmp/infoDialogUi.py:106 .tmp/ui_infoDialog.py:106
+#: .tmp/ui_infoDialog.py:106
 #, fuzzy
 msgid "My Admin Token:  "
 msgstr "Yönetim Anahtarım:  "
 
-#: .tmp/infoDialogUi.py:107 .tmp/ui_infoDialog.py:107
+#: .tmp/ui_infoDialog.py:107
 #, fuzzy
 msgid ""
 "First, you should send your profile, then you can see your link and token."
@@ -114,16 +170,83 @@ msgstr ""
 "Profilinizi gönderdikten sonra linkinizi ve yönetim anahtarınızı "
 "görebilirsiniz. "
 
-#: .tmp/infoDialogUi.py:108 .tmp/ui_privacyPolicy.py:46
-#: .tmp/ui_infoDialog.py:108 .tmp/privacyDialogUi.py:46
+#: .tmp/ui_infoDialog.py:108 .tmp/ui_privacyDialog.py:46
 msgid "&Close"
 msgstr "&Kapat"
 
-#: .tmp/ui_privacyPolicy.py:36 .tmp/privacyDialogUi.py:36
+#: .tmp/about.py:21
+msgid "SmoltGui"
+msgstr "SmoltGui"
+
+#: .tmp/about.py:23
+msgid "Graphical user interface for Smolt"
+msgstr "Smolt için kullanıcı arayüzü"
+
+#: .tmp/about.py:25
+msgid "(c) 2009 Fethican Coşkuner"
+msgstr "(c) 2009 Fethican Coşkuner"
+
+#: .tmp/about.py:32
+msgid "Fethican Coşkuner"
+msgstr "Fethican Coşkuner"
+
+#: .tmp/about.py:32
+msgid "Maintainer"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:87
+msgid "Smolt"
+msgstr "Smolt"
+
+#: .tmp/ui_mainwindow.py:89
+msgid "Info"
+msgstr "Bilgi"
+
+#: .tmp/ui_mainwindow.py:90
+msgid "My Profile"
+msgstr "Profilim"
+
+#: .tmp/ui_mainwindow.py:91
+msgid "Detailed Info"
+msgstr "Detaylı Bilgi"
+
+#: .tmp/ui_mainwindow.py:92
+msgid "&File"
+msgstr "&Dosya"
+
+#: .tmp/ui_mainwindow.py:93
+msgid "&Help"
+msgstr "&Yardım"
+
+#: .tmp/ui_mainwindow.py:94
+msgid "toolBar"
+msgstr "Araç Çubuğu"
+
+#: .tmp/ui_mainwindow.py:95
+msgid "&Send"
+msgstr "&Gönder"
+
+#: .tmp/ui_mainwindow.py:96
+msgid "Ctrl+S"
+msgstr "Ctrl+S"
+
+#: .tmp/ui_mainwindow.py:97
+msgid "&My Smolt Page"
+msgstr "&Smolt Sayfam"
+
+#: .tmp/ui_mainwindow.py:99
+msgid "&Privacy Policy"
+msgstr "Gi&zlilik Politikası"
+
+#: .tmp/ui_mainwindow.py:100
+msgid "&About"
+msgstr "&Hakkında"
+
+#: .tmp/ui_privacyDialog.py:36
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
-#: .tmp/ui_privacyPolicy.py:37 .tmp/privacyDialogUi.py:37
+#: .tmp/ui_privacyDialog.py:37
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -165,139 +288,51 @@ msgid ""
 "Also remember that users can delete their profiles at any time using \"<span "
 "style=\" font-style:italic;\">smoltDeleteProfile</span>\"</p></body></html>"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">   Smolt, Pardus smolt "
+"sunucusuna sadece donanım ve temel işletim sistemi bilgilerini gönderir. "
+"Gönderenin bilgisayarıyla veritabanı arasındaki tek bağlantı UUID'dir. "
+"Gönderenler bu UUID'yi gizli tuttuğu sürece gönderim gizli kalır. Eğer "
+"kullanıcı veritabanından kendine ait verileri silmek isterse</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">    <span style=\" font-"
+"style:italic;\">smoltDeleteProfile</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">komutunu çalıştırmaları "
+"yeterlidir. Herkes istatistik ve verilere bakabildiği ve bilgisayar "
+"profillerini paylaşabildiği için smolt veritabanı sunucusuna gönderilen veri "
+"halka açık kabul edilmelidir. Pek çok yönden biz smolt'u açık kaynak "
+"sürücüler ve genel olarak daha iyi destek için kullanacağımız için smolt "
+"donanım üreticilerinin ve diğer üçüncü kişilerin faydasına sunulur, yani bu "
+"bilgiler üçüncü kişilerle paylaşılır.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-"
+"decoration: underline;\">IP Günlükleme:</span>  Pardus'un smolt kurulumunda "
+"tüm internet trafiği önce bir vekil sunucudan geçer. Bu vekil sunucu IP "
+"adreslerini günlüğüne kaydeder ve arşivler. Pardus Projesi IP adreslerini "
+"smolt veritabanında tutmaz. Bu günlükler gizlidir ve halka açık değildir.</"
+"p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">   Bu politikadan hoşnut "
+"olmayan kullanıcıların smolt'u kullanmaması yeterli olacaktır. Bu politika "
+"hakkında soruları olan kullanıcılar ise Pardus Yönetim Ekibi'yle admin [at] "
+"pardus.org.tr'den iletişim kurabilirler. Ayrıca kullanıcılar\"<span style=\" "
+"font-style:italic;\">smoltDeleteProfile</span>\" vasıtasıyla profillerini "
+"istedikleri zaman silebilirler.</p></body></html>"
 
-#: .tmp/mainWindow.py:105 .tmp/mainwindowUi.py:88 .tmp/ui_mainwindow.py:88
-msgid "Label"
-msgstr "Etiket"
 
-#: .tmp/mainWindow.py:106
-msgid "Data"
-msgstr "Veri"
+#~ msgid "Ctrl+q"
+#~ msgstr "Ctrl+q"
 
-#: .tmp/mainWindow.py:124
-msgid "Bus"
-msgstr "Veriyolu"
+#~ msgid "Ctrl+P"
+#~ msgstr "Ctrl+P"
 
-#: .tmp/mainWindow.py:125
-msgid "Driver"
-msgstr "Sürücü"
-
-#: .tmp/mainWindow.py:126
-msgid "Type"
-msgstr "Tip"
-
-#: .tmp/mainWindow.py:127
-msgid "Description"
-msgstr "Açıklama"
-
-#: .tmp/mainWindow.py:157 .tmp/mainwindowUi.py:98 .tmp/ui_mainwindow.py:98
-msgid "&Exit"
-msgstr "&Çıkış"
-
-#: .tmp/mainWindow.py:159
-msgid "Ctrl+q"
-msgstr "Ctrl+q"
-
-#: .tmp/mainWindow.py:160
-msgid "Exit Smolt without sending profile"
-msgstr "Profil göndermeden çık"
-
-#: .tmp/mainWindow.py:163
-msgid "&Send my profile"
-msgstr "Profilimi &gönder"
-
-#: .tmp/mainWindow.py:165 .tmp/mainwindowUi.py:96 .tmp/ui_mainwindow.py:96
-msgid "Ctrl+S"
-msgstr "Ctrl+S"
-
-#: .tmp/mainWindow.py:166
-msgid "Send my profile"
-msgstr "Profilimi gönder"
-
-#: .tmp/mainWindow.py:169
-msgid "Show &Privacy Policy"
-msgstr "Gizlilik &Politikasını Göster"
-
-#: .tmp/mainWindow.py:171
-msgid "Ctrl+P"
-msgstr "Ctrl+P"
-
-#: .tmp/mainWindow.py:172
-msgid "Show the Smolt Privacy Policy"
-msgstr "Smolt Gizlilik Politikasını Göster"
-
-#: .tmp/mainWindow.py:175
-msgid "&Go my profile page"
-msgstr "Profil &sayfama git"
-
-#: .tmp/mainWindow.py:177
-msgid "Ctrl+O"
-msgstr "Ctrl+0"
-
-#: .tmp/mainWindow.py:178
-msgid "Take me to my smolt profile page"
-msgstr "Beni profil sayfama götür"
-
-#: .tmp/mainwindowUi.py:87 .tmp/ui_mainwindow.py:87
-msgid "Smolt"
-msgstr "Smolt"
-
-#: .tmp/mainwindowUi.py:89 .tmp/ui_mainwindow.py:89
-msgid "Info"
-msgstr "Bilgi"
-
-#: .tmp/mainwindowUi.py:90 .tmp/ui_mainwindow.py:90
-msgid "My Profile"
-msgstr "Profilim"
-
-#: .tmp/mainwindowUi.py:91 .tmp/ui_mainwindow.py:91
-msgid "Detailed Info"
-msgstr "Detaylı Bilgi"
-
-#: .tmp/mainwindowUi.py:92 .tmp/ui_mainwindow.py:92
-msgid "&File"
-msgstr "&Dosya"
-
-#: .tmp/mainwindowUi.py:93 .tmp/ui_mainwindow.py:93
-msgid "&Help"
-msgstr "&Yardım"
-
-#: .tmp/mainwindowUi.py:94 .tmp/ui_mainwindow.py:94
-msgid "toolBar"
-msgstr "Araç Çubuğu"
-
-#: .tmp/mainwindowUi.py:95 .tmp/ui_mainwindow.py:95
-msgid "&Send"
-msgstr "&Gönder"
-
-#: .tmp/mainwindowUi.py:97 .tmp/ui_mainwindow.py:97
-msgid "&My Smolt Page"
-msgstr "&Smolt Sayfam"
-
-#: .tmp/mainwindowUi.py:99 .tmp/ui_mainwindow.py:99
-msgid "&Privacy Policy"
-msgstr "Gi&zlilik Politikası"
-
-#: .tmp/mainwindowUi.py:100 .tmp/ui_mainwindow.py:100
-msgid "&About"
-msgstr "&Hakkında"
-
-#: .tmp/about.py:21
-msgid "SmoltGui"
-msgstr "SmoltGui"
-
-#: .tmp/about.py:23
-msgid "Graphical user interface for Smolt"
-msgstr "Smolt için kullanıcı arayüzü"
-
-#: .tmp/about.py:25
-msgid "(c) 2009 Fethican Coşkuner"
-msgstr "(c) 2009 Fethican Coşkuner"
-
-#: .tmp/about.py:32
-msgid "Fethican Coşkuner"
-msgstr "Fethican Coşkuner"
-
-#: .tmp/about.py:32
-msgid "Maintainer"
-msgstr ""
+#~ msgid "Ctrl+O"
+#~ msgstr "Ctrl+0"
