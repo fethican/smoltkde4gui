@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-31 00:58+0300\n"
+"POT-Creation-Date: 2009-08-07 21:30+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,33 +92,156 @@ msgstr ""
 msgid "SELinux Enforce"
 msgstr ""
 
-#: .tmp/infoDialogUi.py:104 .tmp/ui_infoDialog.py:104
+#: .tmp/mainWindow.py:105 .tmp/ui_mainwindow.py:88
+msgid "Label"
+msgstr ""
+
+#: .tmp/mainWindow.py:106
+msgid "Data"
+msgstr ""
+
+#: .tmp/mainWindow.py:124
+msgid "Bus"
+msgstr ""
+
+#: .tmp/mainWindow.py:125
+msgid "Driver"
+msgstr ""
+
+#: .tmp/mainWindow.py:126
+msgid "Type"
+msgstr ""
+
+#: .tmp/mainWindow.py:127
+msgid "Description"
+msgstr ""
+
+#: .tmp/mainWindow.py:157 .tmp/ui_mainwindow.py:98
+msgid "&Exit"
+msgstr ""
+
+#: .tmp/mainWindow.py:160
+msgid "Exit Smolt without sending profile"
+msgstr ""
+
+#: .tmp/mainWindow.py:163
+msgid "&Send my profile"
+msgstr ""
+
+#: .tmp/mainWindow.py:166
+msgid "Send my profile"
+msgstr ""
+
+#: .tmp/mainWindow.py:169
+msgid "Show &Privacy Policy"
+msgstr ""
+
+#: .tmp/mainWindow.py:172
+msgid "Show the Smolt Privacy Policy"
+msgstr ""
+
+#: .tmp/mainWindow.py:175
+msgid "&Go my profile page"
+msgstr ""
+
+#: .tmp/mainWindow.py:178
+msgid "Take me to my smolt profile page"
+msgstr ""
+
+#: .tmp/ui_infoDialog.py:104
 msgid "My Smolt Info"
 msgstr ""
 
-#: .tmp/infoDialogUi.py:105 .tmp/ui_infoDialog.py:105
+#: .tmp/ui_infoDialog.py:105
 msgid "My Smolt Page: "
 msgstr ""
 
-#: .tmp/infoDialogUi.py:106 .tmp/ui_infoDialog.py:106
+#: .tmp/ui_infoDialog.py:106
 msgid "My Admin Token:  "
 msgstr ""
 
-#: .tmp/infoDialogUi.py:107 .tmp/ui_infoDialog.py:107
+#: .tmp/ui_infoDialog.py:107
 msgid ""
 "First, you should send your profile, then you can see your link and token."
 msgstr ""
 
-#: .tmp/infoDialogUi.py:108 .tmp/ui_privacyPolicy.py:46
-#: .tmp/ui_infoDialog.py:108 .tmp/privacyDialogUi.py:46
+#: .tmp/ui_infoDialog.py:108 .tmp/ui_privacyDialog.py:46
 msgid "&Close"
 msgstr ""
 
-#: .tmp/ui_privacyPolicy.py:36 .tmp/privacyDialogUi.py:36
+#: .tmp/about.py:21
+msgid "SmoltGui"
+msgstr ""
+
+#: .tmp/about.py:23
+msgid "Graphical user interface for Smolt"
+msgstr ""
+
+#: .tmp/about.py:25
+msgid "(c) 2009 Fethican Coşkuner"
+msgstr ""
+
+#: .tmp/about.py:32
+msgid "Fethican Coşkuner"
+msgstr ""
+
+#: .tmp/about.py:32
+msgid "Maintainer"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:87
+msgid "Smolt"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:89
+msgid "Info"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:90
+msgid "My Profile"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:91
+msgid "Detailed Info"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:92
+msgid "&File"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:93
+msgid "&Help"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:94
+msgid "toolBar"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:95
+msgid "&Send"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:96
+msgid "Ctrl+S"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:97
+msgid "&My Smolt Page"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:99
+msgid "&Privacy Policy"
+msgstr ""
+
+#: .tmp/ui_mainwindow.py:100
+msgid "&About"
+msgstr ""
+
+#: .tmp/ui_privacyDialog.py:36
 msgid "Privacy Policy"
 msgstr ""
 
-#: .tmp/ui_privacyPolicy.py:37 .tmp/privacyDialogUi.py:37
+#: .tmp/ui_privacyDialog.py:37
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -159,140 +282,4 @@ msgid ""
 "should contact the Pardus Infrastructure Team at admin [at] pardus.org.tr  "
 "Also remember that users can delete their profiles at any time using \"<span "
 "style=\" font-style:italic;\">smoltDeleteProfile</span>\"</p></body></html>"
-msgstr ""
-
-#: .tmp/mainWindow.py:105 .tmp/mainwindowUi.py:88 .tmp/ui_mainwindow.py:88
-msgid "Label"
-msgstr ""
-
-#: .tmp/mainWindow.py:106
-msgid "Data"
-msgstr ""
-
-#: .tmp/mainWindow.py:124
-msgid "Bus"
-msgstr ""
-
-#: .tmp/mainWindow.py:125
-msgid "Driver"
-msgstr ""
-
-#: .tmp/mainWindow.py:126
-msgid "Type"
-msgstr ""
-
-#: .tmp/mainWindow.py:127
-msgid "Description"
-msgstr ""
-
-#: .tmp/mainWindow.py:157 .tmp/mainwindowUi.py:98 .tmp/ui_mainwindow.py:98
-msgid "&Exit"
-msgstr ""
-
-#: .tmp/mainWindow.py:159
-msgid "Ctrl+q"
-msgstr ""
-
-#: .tmp/mainWindow.py:160
-msgid "Exit Smolt without sending profile"
-msgstr ""
-
-#: .tmp/mainWindow.py:163
-msgid "&Send my profile"
-msgstr ""
-
-#: .tmp/mainWindow.py:165 .tmp/mainwindowUi.py:96 .tmp/ui_mainwindow.py:96
-msgid "Ctrl+S"
-msgstr ""
-
-#: .tmp/mainWindow.py:166
-msgid "Send my profile"
-msgstr ""
-
-#: .tmp/mainWindow.py:169
-msgid "Show &Privacy Policy"
-msgstr ""
-
-#: .tmp/mainWindow.py:171
-msgid "Ctrl+P"
-msgstr ""
-
-#: .tmp/mainWindow.py:172
-msgid "Show the Smolt Privacy Policy"
-msgstr ""
-
-#: .tmp/mainWindow.py:175
-msgid "&Go my profile page"
-msgstr ""
-
-#: .tmp/mainWindow.py:177
-msgid "Ctrl+O"
-msgstr ""
-
-#: .tmp/mainWindow.py:178
-msgid "Take me to my smolt profile page"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:87 .tmp/ui_mainwindow.py:87
-msgid "Smolt"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:89 .tmp/ui_mainwindow.py:89
-msgid "Info"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:90 .tmp/ui_mainwindow.py:90
-msgid "My Profile"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:91 .tmp/ui_mainwindow.py:91
-msgid "Detailed Info"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:92 .tmp/ui_mainwindow.py:92
-msgid "&File"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:93 .tmp/ui_mainwindow.py:93
-msgid "&Help"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:94 .tmp/ui_mainwindow.py:94
-msgid "toolBar"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:95 .tmp/ui_mainwindow.py:95
-msgid "&Send"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:97 .tmp/ui_mainwindow.py:97
-msgid "&My Smolt Page"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:99 .tmp/ui_mainwindow.py:99
-msgid "&Privacy Policy"
-msgstr ""
-
-#: .tmp/mainwindowUi.py:100 .tmp/ui_mainwindow.py:100
-msgid "&About"
-msgstr ""
-
-#: .tmp/about.py:21
-msgid "SmoltGui"
-msgstr ""
-
-#: .tmp/about.py:23
-msgid "Graphical user interface for Smolt"
-msgstr ""
-
-#: .tmp/about.py:25
-msgid "(c) 2009 Fethican Coşkuner"
-msgstr ""
-
-#: .tmp/about.py:32
-msgid "Fethican Coşkuner"
-msgstr ""
-
-#: .tmp/about.py:32
-msgid "Maintainer"
 msgstr ""
