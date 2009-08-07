@@ -156,25 +156,25 @@ class MainWindow(KMainWindow, Ui_MainWindow):
     def createActions(self):
         self.exitAct = QtGui.QAction(i18n("&Exit"), self)
         self.exitAct.setIcon(KIcon("application-exit.png"))
-        self.exitAct.setShortcut(i18n("Ctrl+q"))
+        self.exitAct.setShortcut("Ctrl+q")
         self.exitAct.setStatusTip(i18n("Exit Smolt without sending profile"))
         self.connect(self.exitAct, QtCore.SIGNAL("triggered()"), self.close)
 
         self.sendAct = QtGui.QAction(i18n("&Send my profile"), self)
         self.sendAct.setIcon(KIcon("dialog-ok-apply.png"))
-        self.sendAct.setShortcut(i18n("Ctrl+S"))
+        self.sendAct.setShortcut("Ctrl+S")
         self.sendAct.setStatusTip(i18n("Send my profile"))
         self.connect(self.sendAct, QtCore.SIGNAL("triggered()"), self._send)
 
         self.privacyAct = QtGui.QAction(i18n("Show &Privacy Policy"), self)
         self.privacyAct.setIcon(KIcon("help-about.png"))
-        self.privacyAct.setShortcut(i18n("Ctrl+P"))
+        self.privacyAct.setShortcut("Ctrl+P")
         self.privacyAct.setStatusTip(i18n("Show the Smolt Privacy Policy"))
         self.connect(self.privacyAct, QtCore.SIGNAL("triggered()"), self.privacy)
 
         self.webAct = QtGui.QAction(i18n("&Go my profile page"), self)
         self.webAct.setIcon(KIcon("go-home.png"))
-        self.webAct.setShortcut(i18n("Ctrl+O"))
+        self.webAct.setShortcut("Ctrl+O")
         self.webAct.setStatusTip(i18n("Take me to my smolt profile page"))
         self.connect(self.webAct, QtCore.SIGNAL("triggered()"), self.web)
 
