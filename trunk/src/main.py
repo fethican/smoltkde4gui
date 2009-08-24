@@ -13,6 +13,7 @@
 # Please read the COPYING file.
 
 import sys
+from PyQt4 import QtGui
 from PyKDE4 import kdeui
 from PyKDE4.kdecore import KAboutData, KCmdLineArgs
 from about import aboutData
@@ -31,4 +32,6 @@ if __name__ == "__main__":
 
     mainWindow = MainWindow()
     mainWindow.show()
+    rect = QtGui.QDesktopWidget().screenGeometry()
+    mainWindow.move(rect.width()/2 - mainWindow.width()/2, rect.height()/2 - mainWindow.height()/2)
     app.exec_()
