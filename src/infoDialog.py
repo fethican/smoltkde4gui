@@ -12,8 +12,8 @@ from infoDialogUi import Ui_infoDialog
 Pardus_Smolt = 'http://smolt.pardus.org.tr:8090/client/show/'
 
 class smoltPrivacy(QDialog, Ui_infoDialog):
-    def __init__(self):
-        QDialog.__init__(self)
+    def __init__(self, parent=None):
+        QDialog.__init__(self, parent)
         self.setupUi(self)
 
         self.actions()
