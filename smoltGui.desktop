@@ -11,5 +11,5 @@ Comment[tr]=Smolt Kullanıcı Grafik Arayüzü
 
 Icon=smolt
 Type=Application
-Exec=smoltGui --show-mainwindow
+Exec=smoltGui
 Categories=Qt;Application;System;
