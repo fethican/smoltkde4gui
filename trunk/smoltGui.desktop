@@ -1,36 +1,15 @@
 [Desktop Entry]
 Name=smoltGui
 Name[tr]=Smolt Kullanıcı Arayüzü
-Name[es]=
-Name[nl]=
-Name[de]=
-Name[pt_BR]=
-Name[fr]=
-Name[it]=
-Name[sv]=
 
 GenericName[en]=Smolt hardware profiler
 GenericName[tr]=Smolt donanım profilcisi
-GenericName[nl]=
-GenericName[de]=
-GenericName[es]=
-GenericName[pt_BR]=
-GenericName[fr]=
-GenericName[it]=
-GenericName[sv]=
 
 Comment=Smolt Graphical User Interface
 Comment[en]=Smolt Graphical User Interface
 Comment[tr]=Smolt Kullanıcı Grafik Arayüzü
-Comment[nl]=
-Comment[es]=
-Comment[de]=
-Comment[pt_BR]=
-Comment[fr]=
-Comment[it]=
-Comment[sv]=
 
 Icon=smolt
 Type=Application
 Exec=smoltGui --show-mainwindow
-Categories=Qt;KDE;
+Categories=Qt;Application;System;
