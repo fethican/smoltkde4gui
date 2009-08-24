@@ -71,23 +71,19 @@ class Install(install):
         if not os.path.exists("build/"):
             os.system("./setup.py build")
         if self.root:
-            mime_icons_dir = "%s/usr/share/icons/hicolor" % self.root
             icon_dir = "%s/usr/share/icons/hicolor/128x128/apps" % self.root
-            kde_dir = "%s/usr/kde/4" % self.root
+            ins_dir = "%s/usr" % self.root
         else:
-            mime_icons_dir = "/usr/share/icons/hicolor"
             icon_dir = "/usr/share/icons/hicolor/128x128/apps"
-            kde_dir = "/usr/kde/4"
-        bin_dir = os.path.join(kde_dir, "bin")
-        mime_dir = os.path.join(kde_dir, "share/mime/packages")
-        locale_dir = os.path.join(kde_dir, "share/locale")
-        apps_dir = os.path.join(kde_dir, "share/applications/kde4")
-        project_dir = os.path.join(kde_dir, "share/apps", about.appName)
+            ins_dir = "/usr"
+        bin_dir = os.path.join(ins_dir, "bin")
+        mime_dir = os.path.join(ins_dir, "share/mime/packages")
+        locale_dir = os.path.join(ins_dir, "share/locale")
+        apps_dir = os.path.join(ins_dir, "share/applications")
+        project_dir = os.path.join(ins_dir, "lib/python2.6/site-packages/", about.appName)
         # Make directories
         print "Making directories..."
-        makeDirs(mime_icons_dir)
         makeDirs(icon_dir)
-        #makeDirs(mime_dir)
         makeDirs(bin_dir)
         makeDirs(locale_dir)
         makeDirs(apps_dir)
@@ -99,9 +95,7 @@ class Install(install):
         shutil.copy("icons/smolt.png", icon_dir)
 
         # Install icons
-        mime_size_dir = "%s/48x48/mimetypes/" % mime_icons_dir
-        makeDirs(mime_size_dir)
-        shutil.copy("icons/smolt.png", "%s/application-x-smolt.png" % mime_size_dir)
+        #mime_size_dir = "%s/48x48/mimetypes/" % mime_icons_dir
 
         # Install codes
         print "Installing codes..."
