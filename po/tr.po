@@ -323,7 +323,7 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\">   Bu politikadan hoşnut "
 "olmayan kullanıcıların smolt'u kullanmaması yeterli olacaktır. Bu politika "
 "hakkında soruları olan kullanıcılar ise Pardus Yönetim Ekibi'yle admin [at] "
-"pardus.org.tr'den iletişim kurabilirler. Ayrıca kullanıcılar\"<span style=\" "
+"pardus.org.tr'den iletişim kurabilirler. Ayrıca kullanıcılar \"<span style=\" "
 "font-style:italic;\">smoltDeleteProfile</span>\" vasıtasıyla profillerini "
 "istedikleri zaman silebilirler.</p></body></html>"
 
