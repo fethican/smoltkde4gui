@@ -13,16 +13,21 @@
 # Please read the COPYING file.
 
 import sys
-from PyKDE4.kdeui import *
-from PyKDE4.kdecore import *
+from PyKDE4 import kdeui
+from PyKDE4.kdecore import KAboutData, KCmdLineArgs
 from about import aboutData
 from mainWindow import MainWindow
+import dbus
 
 if __name__ == "__main__":
 
     KCmdLineArgs.init(sys.argv, aboutData)
 
-    app = KUniqueApplication()
+    app = kdeui.KApplication()
+
+    if not dbus.get_default_main_loop():
+        from dbus.mainloop.qt import DBusQtMainLoop
+        DBusQtMainLoop(set_as_default = True)
 
     mainWindow = MainWindow()
     mainWindow.show()
