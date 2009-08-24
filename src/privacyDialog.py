@@ -8,8 +8,8 @@ from privacyDialogUi import Ui_privacyDialog
 
 class privacyDialog(QDialog, Ui_privacyDialog):
 
-    def __init__(self):
-        QDialog.__init__(self)
+    def __init__(self, parent=None):
+        QDialog.__init__(self, parent)
         self.setupUi(self)
 
         self.actions()
