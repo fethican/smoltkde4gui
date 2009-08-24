@@ -205,4 +205,5 @@ class MainWindow(KMainWindow, Ui_MainWindow):
         self.private.show()
 
     def about(self):
-        pass
+        self.about = QtGui.QMessageBox.about(self, i18n("About Smolt Gui"), \
+                i18n("     2009 (c) Fethican Coşkuner\nSmolt KDE4 Graphical User Interface.\n\n\n  http://fedorahosted.org/smolt\n  http://code.google.com/p/smoltkde4gui\n"))
